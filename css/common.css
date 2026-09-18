@@ -1,0 +1,64 @@
+/* ========================================
+   Students' Learning Hub - Common Styles
+   ======================================== */
+
+
+/* ========================================
+   🎨 COLOR PALETTE
+   ======================================== */
+
+/* Main Background - Light Blue/Gray */
+:root {
+    --bg-main: #F7FAFC;
+
+    /* White - Cards & Sections */
+    --white: #FFFFFF;
+
+    /* Primary Blue - Main Buttons & Links */
+    --primary-blue: #2563EB;
+
+    /* Dark Blue - Headings & Hover */
+    --dark-blue: #1E3A8A;
+
+    /* Green - Download Buttons */
+    --download-green: #16A34A;
+
+    /* Main Text - Dark Navy */
+    --text-dark: #1E293B;
+
+    /* Secondary Text - Gray */
+    --text-gray: #64748B;
+
+    /* Border - Light Gray */
+    --border-light: #E2E8F0;
+
+    /* Accent - Teal */
+    --accent-teal: #0EA5A4;
+
+    /* Footer - Dark Navy */
+    --footer-bg: #0F172A;
+}
+
+
+/* ========================================
+   🔄 GENERAL / RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
