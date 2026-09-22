@@ -1,64 +1,150 @@
-/* ========================================
-   Students' Learning Hub - Common Styles
-   ======================================== */
-
-
-/* ========================================
-   🎨 COLOR PALETTE
-   ======================================== */
-
-/* Main Background - Light Blue/Gray */
-:root {
-    --bg-main: #F7FAFC;
-
-    /* White - Cards & Sections */
-    --white: #FFFFFF;
-
-    /* Primary Blue - Main Buttons & Links */
-    --primary-blue: #2563EB;
-
-    /* Dark Blue - Headings & Hover */
-    --dark-blue: #1E3A8A;
-
-    /* Green - Download Buttons */
-    --download-green: #16A34A;
-
-    /* Main Text - Dark Navy */
-    --text-dark: #1E293B;
-
-    /* Secondary Text - Gray */
-    --text-gray: #64748B;
-
-    /* Border - Light Gray */
-    --border-light: #E2E8F0;
-
-    /* Accent - Teal */
-    --accent-teal: #0EA5A4;
-
-    /* Footer - Dark Navy */
-    --footer-bg: #0F172A;
-}
-
-
-/* ========================================
-   🔄 GENERAL / RESET
-   ======================================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-dark);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* هدر (Header) */
+header {
+    background-color: #1a2035;
+    color: #fff;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    background-color: #2a334e;
+    border: none;
+    padding: 6px 12px 6px 30px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.user-icon {
+    font-size: 18px;
+    color: #cbd5e1;
+    cursor: pointer;
 }
 
 
+/* فوتر (Footer) */
+footer {
+    background-color: #1a2035;
+    color: #cbd5e1;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials a {
+    color: #cbd5e1;
+}
+
+/* ریسپانسیو */
+@media (max-width: 868px) {
+    .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner {
+        padding: 25px 5%;
+    }
+    main {
+        padding: 20px 5%;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

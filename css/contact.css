@@ -1,0 +1,176 @@
+/* === صفحه تماس با ما (Contact Us) === */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 30px;
+}
+
+.contact-info-p {
+    font-size: 13.5px;
+    color: #64748b;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-detail-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #8d2b78;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.contact-detail-text h4 {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.contact-detail-text p {
+    font-size: 14px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.social-section {
+    margin-top: 25px;
+}
+
+.social-section h4 {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: #8d2b78;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* فرم تماس */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #8d2b78;
+}
+
+.btn-send {
+    background-color: #8d2b78;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background-color: #722261;
+}
+
+/* فوتر (Footer) */
+footer {
+    background-color: #1a2035;
+    color: #cbd5e1;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials a {
+    color: #cbd5e1;
+}
+
+/* ریسپانسیو */
+@media (max-width: 868px) {
+    .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner {
+        padding: 25px 5%;
+    }
+    main {
+        padding: 20px 5%;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
