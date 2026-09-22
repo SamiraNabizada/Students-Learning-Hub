@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* هدر (Header) */
+header {
+    background-color: #1a2035;
+    color: #fff;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    background-color: #2a334e;
+    border: none;
+    padding: 6px 12px 6px 30px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.user-icon {
+    font-size: 18px;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+/* بنر بالای صفحات (Hero Banner) */
+.hero-banner {
+    background: linear-gradient(135deg, #232a45 0%, #3b4568 100%);
+    color: #fff;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.hero-text p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.hero-icon i {
+    font-size: 45px;
+    opacity: 0.8;
+}
+
+/* محتوای اصلی */
+main {
+    flex: 1;
+    padding: 40px 8%;
+}
+
+/* === صفحه درباره ما (About Us) === */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #edf2f7;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a2035;
+}
+
+.card-title i {
+    color: #8d2b78;
+}
+
+/* بخش ماموریت ما */
+.mission-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.quote-box {
+    background-color: #f8fafc;
+    border-left: 3px solid #8d2b78;
+    padding: 15px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12.5px;
+    color: #475569;
+    font-style: italic;
+    text-align: center;
+}
+
+.quote-author {
+    margin-top: 8px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* بخش چرا ما */
+.feature-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fdf2f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8d2b78;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.feature-info h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #1e293b;
+}
+
+.feature-info p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* بخش تیم ما */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.team-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    overflow: hidden;
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h4 {
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.team-info p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+/* ==========================================
+   استایل‌های رسپانسیف اختصاصی صفحه درباره ما (About Us)
+   ========================================== */
+
+/* ۱. تبلت‌های بزرگ و دسکتاپ‌های کوچک (زیر ۱۰۲۴px) */
+@media (max-width: 1024px) {
+    /* تغییر چیدمان شبکه کارت‌ها به ۲ ستون */
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* کارت سوم (تیم ما) در دو ستون عریض‌تر می‌شود */
+    .about-grid .card:last-child {
+        grid-column: span 2;
+    }
+}
+
+/* ۲. تبلت‌ها و موبایل‌های افقی (زیر ۷۶۸px) */
+@media (max-width: 768px) {
+    /* نمایش دکمه همبرگری هدر */
+    .hamburger {
+        display: block;
+    }
+
+    /* منوی کشویی هدر در حالت موبایل */
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1a2035;
+        border-top: 1px solid #2a334e;
+        display: none;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    nav.nav-active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 15px;
+    }
+
+    /* تغییر چیدمان شبکه کارت‌ها به تک‌ستونه */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid .card:last-child {
+        grid-column: span 1;
+    }
+
+    /* تنظیمات بنر اصلی */
+    .hero-banner {
+        padding: 25px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-icon i {
+        font-size: 38px;
+    }
+
+    main {
+        padding: 20px 4%;
+    }
+
+    /* تنظیمات فوتر */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-left, .footer-links, .footer-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ۳. موبایل‌های کوچک (زیر ۴۸۰px) */
+@media (max-width: 480px) {
+    .logo span {
+        font-size: 14px;
+    }
+
+    .search-box input {
+        width: 110px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .team-member {
+        gap: 10px;
+    }
+
+    .team-avatar {
+        width: 40px;
+        height: 40px;
+    }
+}
