@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students Learning Hub</title>
+        <title>Books | Student Resources</title>
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/books.css">
     <link rel="stylesheet" href="css/common.css">
@@ -12,50 +12,7 @@
        <!-- آیکون‌های FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 <!-- هدر -->
     <header>
         <div class="logo">
@@ -79,6 +36,267 @@
         </div>
     </header>
 
+ <!-- Books Introduction -->
+    <section class="books-intro">
+
+        <div class="container">
+
+            <h1>Explore Our Books</h1>
+
+            <p>
+                Find useful books and learning materials to support
+                your studies and make learning more accessible.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <input
+                type="text"
+                id="bookSearch"
+                placeholder="Search for a book..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Category Buttons -->
+    <section class="categories">
+
+        <div class="container">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="english">
+                English
+            </button>
+
+            <button class="category-btn" data-category="mathematics">
+                Mathematics
+            </button>
+
+            <button class="category-btn" data-category="science">
+                Science
+            </button>
+
+            <button class="category-btn" data-category="korean">
+                Korean
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Books -->
+    <main class="books-section">
+
+        <div class="container">
+
+            <div class="books-grid" id="booksGrid">
+
+
+                <!-- Book 1 -->
+                <article class="book-card" data-category="english">
+
+                    <div class="book-icon">
+                        📘
+                    </div>
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+                            English
+                        </span>
+
+                        <h2>English Grammar</h2>
+
+                        <p>
+                            A useful resource for students who want
+                            to improve their English grammar.
+                        </p>
+
+                        <div class="book-buttons">
+
+                            <a
+                                href="./books/The Adventures of Sherlock Holmes.pdf"
+                                target="_blank"
+                                class="read-btn"
+                            >
+                                Read Book
+                            </a>
+
+                            <a
+                                href="./books/The Adventures of Sherlock Holmes.pdf"
+                                download
+                                class="download-btn"
+                            >
+                                Download
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 2 -->
+                <article class="book-card" data-category="mathematics">
+
+                    <div class="book-icon">
+                        📐
+                    </div>
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+                            Mathematics
+                        </span>
+
+                        <h2>Mathematics Fundamentals</h2>
+
+                        <p>
+                            Basic mathematical concepts and useful
+                            exercises for students.
+                        </p>
+
+                        <div class="book-buttons">
+
+                            <a
+                                href="./books/CollegeAlgebra.pdf"
+                                target="_blank"
+                                class="read-btn"
+                            >
+                                Read Book
+                            </a>
+
+                            <a
+                                href="./books/CollegeAlgebra.pdf"
+                                download
+                                class="download-btn"
+                            >
+                                Download
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 3 -->
+                <article class="book-card" data-category="science">
+
+                    <div class="book-icon">
+                        🔬
+                    </div>
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+                            Science
+                        </span>
+
+                        <h2>Introduction to Science</h2>
+
+                        <p>
+                            A learning resource for students interested
+                            in basic science concepts.
+                        </p>
+
+                        <div class="book-buttons">
+
+                            <a
+                                href="./books/Biology for Dummies.pdf"
+                                target="_blank"
+                                class="read-btn"
+                            >
+                                Read Book
+                            </a>
+
+                            <a
+                                href="./books/Biology for Dummies.pdf"
+                                download
+                                class="download-btn"
+                            >
+                                Download
+                            </a>
+
+                        </div>
+
+                    </article>
+                 </article>
+
+        <!-- Korean Book -->
+        <article class="book-card" data-category="other">
+
+            <div class="book-icon">
+                🇰🇷
+            </div>
+
+            <div class="book-content">
+
+                <span class="book-category">
+                    Korean
+                </span>
+
+                <h2>Learn Korean for Beginners</h2>
+
+                <p>
+                    A beginner-friendly resource for students who want
+                    to learn basic Korean vocabulary and expressions.
+                </p>
+
+                <div class="book-buttons">
+
+                    <a
+                        href="./books/Korean grammer in use beginner.pdf"
+                        target="_blank"
+                        class="read-btn"
+                    >
+                        Read Book
+                    </a>
+
+                    <a
+                        href="./books/Korean grammer in use beginner.pdf"
+                        download
+                        class="download-btn"
+                    >
+                        Download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div> <!-- books-grid -->
+
+                
+                <!-- No Results Message -->
+                <p id="noResults">
+                    No books found.
+                </p>
+
+        </div>
+
+    </main>
+
+<script src="./book.js"></script>
 
 
 
