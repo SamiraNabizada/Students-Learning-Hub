@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 
+   BOOK INTRODUCTION
+ */
+
+.books-intro {
+    background: linear-gradient(135deg, #eaf2ff, #f5f8ff);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.books-intro h1 {
+    font-size: 42px;
+    color: #8d2b78;
+    margin-bottom: 15px;
+}
+
+.books-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 18px;
+}
+
+
+/* 
+   SEARCH
+ */
+
+.search-section {
+    padding: 35px 0 20px;
+}
+
+#bookSearch {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+
+    padding: 15px 20px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background-color: white;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+#bookSearch:focus {
+    border-color: #8d2b78;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* 
+   CATEGORY BUTTONS
+ */
+
+.categories {
+    padding: 15px 0 35px;
+    text-align: center;
+}
+
+.category-btn {
+    border: none;
+
+    background-color: #e5e7eb;
+    color: #333;
+
+    padding: 10px 18px;
+    margin: 5px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.category-btn:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    background-color: #8d2b78;
+    color: white;
+}
+
+
+/* 
+   BOOKS SECTION
+ */
+
+.books-section {
+    padding: 20px 0 70px;
+}
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* 
+   BOOK CARD
+ */
+
+.book-card {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* 
+   BOOK ICON
+ */
+
+.book-icon {
+    background-color: #eaf2ff;
+
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+
+/* 
+   BOOK CONTENT
+ */
+
+.book-content {
+    padding: 25px;
+}
+
+.book-category {
+    color: #8d2b78;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.book-content h2 {
+    margin: 8px 0 12px;
+
+    font-size: 21px;
+
+    color: #1f2937;
+}
+
+.book-content p {
+    color: #666;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* 
+   BOOK BUTTONS
+ */
+
+.book-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.read-btn,
+.download-btn {
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.read-btn {
+    background-color: #8d2b78;
+    color: white;
+}
+
+.read-btn:hover {
+    background-color: #8d2b78;
+    transform: translateY(-2px);
+}
+
+.download-btn {
+    background-color: #eef2f7;
+    color: #333;
+}
+
+.download-btn:hover {
+    background-color: #dfe5ec;
+    transform: translateY(-2px);
+}
+
+
+/* 
+   NO RESULTS
+ */
+
+#noResults {
+    display: none;
+
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 30px;
+
+    font-size: 18px;
+}
+
+
+
+/* 
+   MOBILE RESPONSIVE DESIGN
+ */
+
+@media (max-width: 700px) {
+
+    .books-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .books-intro {
+        padding: 50px 20px;
+    }
+
+    .books-intro h1 {
+        font-size: 32px;
+    }
+
+    .books-intro p {
+        font-size: 16px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-buttons {
+        flex-direction: column;
+    }
+
+    .read-btn,
+    .download-btn {
+        width: 100%;
+    }
+
+    .category-btn {
+        margin: 4px 2px;
+    }
+}

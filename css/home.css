@@ -1,0 +1,578 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+    background: #f8fbff;
+    color: #8d2b78;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 330px;
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #f7f5ff,
+        #f2efff
+    );
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    margin: 0 0 18px;
+    font-size: 46px;
+    line-height: 1.15;
+    color: #8d2b78;
+    font-weight: 700;
+}
+
+.hero-content p {
+    margin: 0 0 28px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #55709c;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #8d2b78,
+        #8d2b78
+    );
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.hero-btn span {
+    font-size: 23px;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(145, 30, 170, 0.25);
+}
+
+
+/* =========================
+   HERO ILLUSTRATION
+========================= */
+
+.hero-image {
+    position: relative;
+
+    width: 440px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(
+        circle,
+        rgba(203, 201, 255, 0.45),
+        transparent 70%
+    );
+
+    border-radius: 50%;
+}
+
+.books-stack {
+    position: absolute;
+    left: 75px;
+    bottom: 55px;
+
+    width: 250px;
+    height: 120px;
+}
+
+.book {
+    position: absolute;
+    width: 230px;
+    height: 45px;
+
+    border-radius: 8px 5px 5px 8px;
+
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book::after {
+    content: "";
+    position: absolute;
+
+    right: -5px;
+    top: 5px;
+
+    width: 35px;
+    height: 35px;
+
+    background: #fff;
+
+    border-radius: 2px;
+}
+
+.book-blue {
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        #1474d4,
+        #2387e7
+    );
+    transform: rotate(-4deg);
+}
+
+.book-pink {
+    top: 40px;
+    left: -8px;
+    background: linear-gradient(
+        90deg,
+        #ed5d9c,
+        #ef78b0
+    );
+    transform: rotate(-2deg);
+}
+
+.book-purple {
+    top: 78px;
+    left: -10px;
+    background: linear-gradient(
+        90deg,
+        #8d2b78,
+        #694dd1
+    );
+}
+#noResults {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Plant */
+
+.plant {
+    position: absolute;
+
+    right: 100px;
+    top: 35px;
+
+    width: 90px;
+    height: 150px;
+}
+
+.stem {
+    position: absolute;
+
+    width: 5px;
+    height: 135px;
+
+    left: 43px;
+    top: 10px;
+
+    background: #20a997;
+}
+
+.leaf {
+    position: absolute;
+
+    width: 32px;
+    height: 55px;
+
+    background: #16ad91;
+
+    border-radius: 100% 0 100% 0;
+}
+
+.leaf-1 {
+    left: 13px;
+    top: 30px;
+    transform: rotate(-40deg);
+}
+
+.leaf-2 {
+    left: 45px;
+    top: 55px;
+    transform: rotate(40deg);
+}
+
+.leaf-3 {
+    left: 12px;
+    top: 75px;
+    transform: rotate(-40deg);
+}
+
+.leaf-4 {
+    left: 44px;
+    top: 10px;
+    transform: rotate(40deg);
+}
+
+
+/* Pencil holder */
+
+.pencil-holder {
+    position: absolute;
+
+    right: 35px;
+    bottom: 40px;
+
+    width: 65px;
+    height: 65px;
+
+    background: #2776d5;
+
+    border-radius: 8px 8px 20px 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 2px;
+
+    padding-top: 5px;
+
+    font-size: 25px;
+}
+
+.pencil-holder span {
+    transform: translateY(-35px);
+}
+
+
+/* =========================
+   POPULAR BOOKS
+========================= */
+
+.popular-books {
+    padding: 35px 6% 55px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size: 27px;
+    color: #173b70;
+}
+
+.section-heading a {
+    color: #a42bb0;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.section-heading a span {
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+
+/* =========================
+   BOOK GRID
+========================= */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.book-card {
+    min-height: 355px;
+
+    padding: 22px 18px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2eaf5;
+
+    border-radius: 13px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(40, 70, 110, 0.05);
+
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(40, 70, 110, 0.12);
+}
+
+
+/* =========================
+   BOOK COVERS
+========================= */
+
+.book-cover {
+    width: 140px;
+    height: 175px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 10px;
+
+    color: white;
+
+    border-radius: 3px;
+
+    box-shadow:
+        3px 5px 10px rgba(0, 0, 0, 0.18);
+}
+
+.book-cover strong {
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.book-cover span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+/* HTML */
+
+.html-cover {
+    background: linear-gradient(
+        145deg,
+        #173b62,
+        #0e2948
+    );
+}
+
+.html-cover span {
+    color: #43e4e0;
+}
+
+
+/* JavaScript */
+
+.javascript-cover {
+    background: linear-gradient(
+        145deg,
+        #ffd600,
+        #f3bd00
+    );
+
+    color: #25313d;
+}
+
+.javascript-cover span {
+    color: #111;
+}
+
+
+/* Python */
+
+.python-cover {
+    background: linear-gradient(
+        145deg,
+        #17659e,
+        #15517e
+    );
+}
+
+
+/* Graphic Design */
+
+.design-cover {
+    background: linear-gradient(
+        145deg,
+        #6634b7,
+        #5428a1
+    );
+}
+
+
+/* =========================
+   BOOK TEXT
+========================= */
+
+.book-card h3 {
+    margin: 0 0 8px;
+
+    color: #254878;
+
+    font-size: 18px;
+}
+
+.book-card p {
+    margin: 0 0 18px;
+
+    color: #7c91b2;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   READ BUTTON
+========================= */
+
+.read-btn {
+    display: inline-block;
+
+    width: 75%;
+
+    padding: 11px 10px;
+
+    background: #f2d5f5;
+
+    color: #9d269f;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.read-btn:hover {
+    background: #a42bb0;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        width: 360px;
+        transform: scale(0.85);
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 45px 20px 20px;
+    }
+
+    .hero-content p br {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+
+        width: 330px;
+        height: 220px;
+
+        transform: scale(0.8);
+    }
+
+    .popular-books {
+        padding: 30px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card {
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .hero-image {
+        transform: scale(0.68);
+        margin-top: 0;
+        margin-bottom: -25px;
+    }
+}
