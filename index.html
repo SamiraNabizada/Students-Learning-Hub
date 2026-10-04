@@ -13,49 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+ 
 
 <!-- هدر -->
     <header>
@@ -67,7 +25,7 @@
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="books.html">Books</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -80,12 +38,123 @@
         </div>
     </header>
 
+<main class="home">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn, Read &amp; Grow</h1>
+
+            <p>
+                Find useful educational books and<br>
+                learning resources in one place.
+            </p>
+
+            <a href="books.html" class="hero-btn">
+                Explore Books
+                <span>→</span>
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="books-stack">
+                <div class="book book-blue"></div>
+                <div class="book book-pink"></div>
+                <div class="book book-purple"></div>
+            </div>
+
+            <div class="plant">
+                <span class="stem"></span>
+                <span class="leaf leaf-1"></span>
+                <span class="leaf leaf-2"></span>
+                <span class="leaf leaf-3"></span>
+                <span class="leaf leaf-4"></span>
+            </div>
+
+    </section>
 
 
+    <!-- Popular Books -->
+    <section class="popular-books">
+
+        <div class="section-heading">
+            <h2>Popular Books</h2>
+
+            <a href="books.html">
+                View All <span>→</span>
+            </a>
+        </div>
 
 
+        <div class="books-grid">
+
+          <!-- Book 1 -->
+<article class="book-card">
+
+    <img src="images/javascript.jpg" alt="JavaScript" width="150px" height="180px">
+
+    <h3>JavaScript From beginner to professional</h3>
+
+    <p>Web Development</p>
+
+    <a href="books/javascript.pdf" class="read-btn" target="_blank">
+        Read
+    </a>
+
+</article>
 
 
+            <!-- Book 2 -->
+        <article class="book-card">
+
+    <img src="images/cyberscurity.jpg" alt="cybersecurity" width="150px" height="180px">
+
+    <h3>Introduction to Cybersecurity</h3>
+
+    <p>Cybersecurity</p>
+
+    <a href="books/Introduction to Cybersecurity.pdf" class="read-btn" target="_blank">
+        Read
+    </a>
+
+</article>
+
+            <!-- Book 3 -->
+           <article class="book-card">
+
+    <img src="images/python.jpg" alt="Python" width="150px" height="180px">
+
+    <h3>Learning Python</h3>
+
+    <p>Programming</p>
+
+    <a href="books/Learning_Python.pdf" class="read-btn"target="_blank">
+        Read
+    </a>
+
+</article>
+
+
+            <!-- Book 4 -->
+        <article class="book-card">
+
+    <img src="images/cook .jpg" alt="JavaScript" width="150px" height="180px" target="_blank">
+
+    <h3>JavaScript</h3>
+
+    <p>Web Development</p>
+
+    <a href="books/USU-Student-Cookbook-FINAL-1.pdf" class="read-btn" target="_blank">
+        Read
+    </a>
+
+</article>
+
+        </div>
+
+    </section>
+
+</main>
 
 
 
@@ -121,5 +190,6 @@
     <script src="javascript/books.js"></script>
     <script src="javascript/contact.js"></script>
     <script src="javascript/home.js"></script>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
